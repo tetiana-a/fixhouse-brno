@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://housefixbrno.cz/sitemap.xml

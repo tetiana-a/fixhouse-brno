@@ -1,0 +1,5 @@
+.fade-in{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.fade-in-right{opacity:0;transform:translateX(28px);transition:opacity .7s ease,transform .7s ease}
+.fade-in.visible,.fade-in-right.visible{opacity:1;transform:none}
+
+@keyframes slideDown{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
