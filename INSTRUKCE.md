@@ -9,18 +9,17 @@ npm install
 
 Vytvoř soubor `.env` (zkopíruj z `.env.example`):
 ```
-EMAIL_USER=tvůj_gmail@gmail.com
-EMAIL_PASS=app_heslo_z_google
+RESEND_API_KEY=re_xxxxxxxxxxxx
 EMAIL_TO=eddigood2020@gmail.com
 PORT=3000
 ```
 
-Jak získat App Password pro Gmail:
-1. Jdi na: myaccount.google.com
-2. Bezpečnost → Dvoufázové ověření (zapni)
-3. Bezpečnost → Hesla aplikací
-4. Vyber "Pošta" → vygeneruje 16místný kód
-5. Vlož do EMAIL_PASS
+Jak získat API klíč Resend:
+1. Jdi na: resend.com → Domains → přidej a ověř doménu housefixbrno.cz
+2. API Keys → Create API Key (oprávnění Sending access)
+3. Vlož do RESEND_API_KEY
+
+Testy (ochrana formulářů): `npm test`
 
 Spuštění:
 ```bash
@@ -43,9 +42,9 @@ npm start
    git push -u origin main
    ```
 4. V Railway klikni na projekt → **Variables** → přidej:
-   - `EMAIL_USER` = tvůj gmail
-   - `EMAIL_PASS` = app heslo
+   - `RESEND_API_KEY` = klíč z Resend
    - `EMAIL_TO` = eddigood2020@gmail.com
+   - `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID` (volitelné)
    - `PORT` = 3000
 5. Railway automaticky nasadí → dostaneš URL: **xxx.railway.app**
 
@@ -92,8 +91,8 @@ Test po spuštění:
 3. Zkontroluj eddigood2020@gmail.com — přijde email
 
 Pokud nepřichází:
-- Zkontroluj EMAIL_PASS (musí být App Password, ne normální heslo)
-- Zkontroluj že máš zapnuté Dvoufázové ověření na Googlu
+- Zkontroluj RESEND_API_KEY a že je doména v Resend ověřená
+- Resend → Emails: je tam vidět každý odeslaný e-mail a jeho příjemce
 
 ---
 
