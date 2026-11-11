@@ -12,7 +12,7 @@ Snímky obrazovky před úpravou a po ní archivuje autorka mimo repozitář (ob
 
 - Na každé stránce je nahoře trvalý pruh „UKÁZKOVÝ WEB — fiktivní firma…“ a stejné upozornění v patičce.
 - Vypnuty všechny poptávkové formuláře, kalkulačka ceny a tlačítka „Zavolat“; server nepřijímá poptávky (odstraněny `/api/contact`, `/api/calculate`, e-maily a Telegram).
-- Odstraněny smyšlené recenze, hodnocení „4.9★“, počty realizací a specialistů, „od roku 2007 / 2022“, „17 let zkušeností“, údaje o pojištění, „Pracujeme legálně…“, smyšlené IČ a portfolio realizací.
+- Odstraněny smyšlené recenze, hodnocení „4.9★“, počty realizací a specialistů, „od roku 2007 / 2022“, „17 let zkušeností“, údaje o pojištění, „Pracujeme legálně…“, smyšlené IČ, portfolio realizací a tvrzení o spolupráci se značkami Geberit, Roca, Grohe a s developery.
 - Odstraněny jméno, telefon, e-mail a adresa Eduarda Korolova, telefon +420 608 317 700, e-mail info@housefixbrno.cz a adresy.
 - Odstraněna strukturovaná data Schema.org `LocalBusiness`; vyhledávačům zakázána indexace (`noindex, nofollow`).
 - Stránky „O nás“, „Portfolio“ a „Kontakt“ nyní popisují projekt jako ukázkový.
