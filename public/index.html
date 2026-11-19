@@ -19,6 +19,7 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Playfair+Display:ital,wght@0,700;1,400&amp;display=swap" rel="stylesheet"/>
 <link href="css/main.css" rel="stylesheet"/>
+<link href="/css/motion.css" rel="stylesheet"/>
 </head>
 <body><div role="note" style="background:#1A1A1A;color:#F5C800;padding:10px 16px;text-align:center;font:600 14px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;position:relative;z-index:1001">UKÁZKOVÝ WEB — fiktivní firma. House Fix Brno je výukový projekt webdesignu Tetiany Kotolup. Nejedná se o skutečnou stavební firmu: služby nelze objednat, ceny a texty jsou pouze ilustrativní.</div>
 <!-- HEADER -->
@@ -38,10 +39,10 @@
 </a>
 <nav class="nav" id="nav">
 <a href="#sluzby">Služby</a>
-
 <a href="#postup">Jak pracujeme</a>
-
-
+<a href="/cenik/">Ceník</a>
+<a href="/o-nas/">O nás</a>
+<a href="/kontakt/">Kontakt</a>
 </nav>
 <div class="hd-right">
 
@@ -53,11 +54,10 @@
 </div>
 <div class="mob-nav" id="mob-nav">
 <a href="#sluzby">Služby</a>
-
 <a href="#postup">Jak pracujeme</a>
-
-
-
+<a href="/cenik/">Ceník</a>
+<a href="/o-nas/">O nás</a>
+<a href="/kontakt/">Kontakt</a>
 </div>
 </header>
 <!-- HERO -->
@@ -72,8 +72,8 @@
 <h1>Rekonstrukce <em>na klíč</em><br/>v Brně</h1>
 <p class="hero-lead">Proměníme váš byt nebo dům v moderní domov. Poptávka, fixované ceny ve smlouvě, záruka kvality.</p>
 <div class="hero-btns">
-
-
+<a class="btn-primary" href="#sluzby">Naše služby</a>
+<a class="btn-ghost" href="/cenik/">Orientační ceník</a>
 </div>
 <div class="hero-badges">
 
@@ -101,7 +101,7 @@
 <p class="sec-sub" style="color:rgba(255,255,255,.6)">Klikněte na službu pro více informací a ceník</p>
 </div>
 <div class="services-grid">
-<a class="srv-card" href="pages/koupelny.html" rel="noopener" target="_blank">
+<a class="srv-card" href="/rekonstrukce-koupelen/" rel="noopener" target="_blank">
 <div class="srv-img"><img alt="Rekonstrukce koupelen Brno" loading="lazy" src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=500&amp;q=80"/></div>
 <div class="srv-body">
 <h3>Rekonstrukce koupelen</h3>
@@ -109,7 +109,7 @@
 <span class="srv-link">Zjistit ceny →</span>
 </div>
 </a>
-<a class="srv-card" href="pages/pokoje.html" rel="noopener" target="_blank">
+<a class="srv-card" href="/rekonstrukce-pokoju/" rel="noopener" target="_blank">
 <div class="srv-img"><img alt="Rekonstrukce pokojů Brno" loading="lazy" src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=500&amp;q=80"/></div>
 <div class="srv-body">
 <h3>Rekonstrukce pokojů</h3>
@@ -117,7 +117,7 @@
 <span class="srv-link">Zjistit ceny →</span>
 </div>
 </a>
-<a class="srv-card" href="pages/kancelare.html" rel="noopener" target="_blank">
+<a class="srv-card" href="/rekonstrukce-kancelari/" rel="noopener" target="_blank">
 <div class="srv-img"><img alt="Výzdoba kanceláří Brno" loading="lazy" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&amp;q=80"/></div>
 <div class="srv-body">
 <h3>Výzdoba kanceláří</h3>
@@ -125,7 +125,7 @@
 <span class="srv-link">Zjistit ceny →</span>
 </div>
 </a>
-<a class="srv-card" href="pages/nove-budovy.html" rel="noopener" target="_blank">
+<a class="srv-card" href="/rekonstrukce-novostavby/" rel="noopener" target="_blank">
 <div class="srv-img"><img alt="Rekonstrukce novostavby Brno" loading="lazy" src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500&amp;q=80"/></div>
 <div class="srv-body">
 <h3>Nové budovy</h3>
@@ -133,7 +133,7 @@
 <span class="srv-link">Zjistit ceny →</span>
 </div>
 </a>
-<a class="srv-card" href="pages/kuchyne.html" rel="noopener" target="_blank">
+<a class="srv-card" href="/rekonstrukce-kuchyni/" rel="noopener" target="_blank">
 <div class="srv-img"><img alt="Renovace kuchyní Brno" loading="lazy" src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&amp;q=80"/></div>
 <div class="srv-body">
 <h3>Renovace kuchyní</h3>
@@ -141,7 +141,7 @@
 <span class="srv-link">Zjistit ceny →</span>
 </div>
 </a>
-<a class="srv-card" href="pages/chaty.html" rel="noopener" target="_blank">
+<a class="srv-card" href="/opravy-chat/" rel="noopener" target="_blank">
 <div class="srv-img"><img alt="Opravy chat Brno" loading="lazy" src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=500&amp;q=80"/></div>
 <div class="srv-body">
 <h3>Chaty a chalupy</h3>
@@ -228,12 +228,12 @@
 </div>
 <div class="footer-links">
 <strong>Služby</strong>
-<a href="pages/koupelny.html" target="_blank">Rekonstrukce koupelen</a>
-<a href="pages/pokoje.html" target="_blank">Rekonstrukce pokojů</a>
-<a href="pages/kancelare.html" target="_blank">Výzdoba kanceláří</a>
-<a href="pages/kuchyne.html" target="_blank">Renovace kuchyní</a>
-<a href="pages/nove-budovy.html" target="_blank">Nové budovy</a>
-<a href="pages/chaty.html" target="_blank">Chaty a chalupy</a>
+<a href="/rekonstrukce-koupelen/">Rekonstrukce koupelen</a>
+<a href="/rekonstrukce-pokoju/">Rekonstrukce pokojů</a>
+<a href="/rekonstrukce-kancelari/">Výzdoba kanceláří</a>
+<a href="/rekonstrukce-kuchyni/">Renovace kuchyní</a>
+<a href="/rekonstrukce-novostavby/">Nové budovy</a>
+<a href="/opravy-chat/">Chaty a chalupy</a>
 </div>
 
 </div>

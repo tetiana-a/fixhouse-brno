@@ -41,3 +41,16 @@ function closeLb(){
   document.body.style.overflow='';
 }
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLb();});
+
+// Subpage nav toggle
+document.querySelectorAll('.nav-toggle').forEach(b=>b.addEventListener('click',()=>b.parentElement.querySelector('.nav')?.classList.toggle('open')));
+
+// 2026 motion: scroll progress + staged reveal
+(function(){
+  const bar=document.createElement('div');bar.className='scroll-bar';bar.setAttribute('aria-hidden','true');document.body.prepend(bar);
+  if(!('IntersectionObserver' in window))return;
+  const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target);}}),{rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.section .container > *, .srv-card, .why-card, .faq-item, .step-item, .price-table, .page-hero__inner > *').forEach((el,i)=>{
+    el.classList.add('reveal');el.style.setProperty('--d',(i%4)*80+'ms');ro.observe(el);
+  });
+})();
